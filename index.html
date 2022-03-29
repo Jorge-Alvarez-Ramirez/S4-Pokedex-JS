@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="css/stylepoke.css">
+</head>
+<body>
+    <h1>LaunchX</h1>
+    <section class="logo">
+        <img src="https://www.bocalista.com/wp-content/uploads/2019/05/Detective-Pikachu-Pok%C3%A9mon-cre%C3%B3-un-mundo-en-el-que-quer%C3%ADa-vivir-6.jpg" alt="logo Pokémon">
+    </section>
+    <section class="pokedex">
+        <article class="primeraParte">
+            <section class="seccionCabecera">
+                <section class="botonesSuperiores">
+                    <article class="botonRedondo grande">
+                        <div class="botonRedondo grande2 azulOscuro">
+                            <div class="botonRedondo grande3">
+                                <div class="botonRedondo pequeno"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="botonRedondo pequeno rojo">
+                        <div class="botonRedondo pequeno2 rojoOscuro">
+                            <div class="botonRedondo pequeno3 rojo"></div>
+                        </div>
+                    </article>
+                    <article class="botonRedondo pequeno amarillo">
+                        <div class="botonRedondo pequeno2 amarilloOscuro">
+                            <div class="botonRedondo pequeno3 amarillo"></div>
+                        </div>
+                    </article>
+                    <article class="botonRedondo pequeno amarillo">
+                        <div class="botonRedondo pequeno2 amarilloOscuro">
+                            <div class="botonRedondo pequeno3 amarillo"></div>
+                        </div>
+                    </article>
+                </section>
+                <section class="poligono"></section>
+            </section>
+            <section class="seccionPantalla">
+                <section class="pantalla">
+                    <section class="imagenPantalla">
+                        <img id="pokeImagen" class="pokeImagen" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png" alt="pokébola">
+                        <p id="pokeNombre" class="pokeNombre">Bienvenido</p>
+                    </section>
+                </section>
+            </section>
+            <section class="seccionBotonesInferiores">
+                <section class="botonesInferiores">
+                    <article class="botonRedondo mediano negro">
+                        <article class="botonRedondo mediano2 negroClaro"></article>
+                    </article>
+                    <article class="botonAlargado amarillo"></article>
+                    <article class="botonAlargado azulOscuro"></article>
+                </section>
+                <section class="cruz">
+                    <article class="parteCruzArriba"></article>
+                    <article class="parteCruzMedia">
+                        <article class="parteCruzIzquierda" onclick="BuscarCruz(-1)"></article>
+                        <article class="parteCruzCentral"></article>
+                        <article class="parteCruzDerecha" onclick="BuscarCruz(1)"></article>
+                    </article>
+                    <article class="parteCruzAbajo"></article>
+                </section>
+                <section class="panelInferior">
+                </section>
+            </section>
+            <section class="seccionSepador">
+                <div class="sombraDiseño">
+                    <div class="diseño">
+                        <div class="cuadro"></div>
+                    </div>
+                </div>
+                <div class="sombraDiseño">
+                    <div class="diseño">
+                        <div class="cuadro"></div>
+                    </div>
+                </div>
+                <div class="circulo"></div>
+            </section>
+        </article>
+        <article class="segundaParte">
+            <section class="seccionCabecera">
+                <div class="parteBlanca"></div>
+            </section>
+            <section class="seccionPantallaDos">
+                <section class="segundaPantalla">
+                    <p id="pokeInfo"></p>
+                </section>
+                <section class="indicadores">
+                    <article class="indicador">
+                        <p id="indicadorUno"></p>
+                    </article>
+                    <article class="indicador">
+                        <p id="indicadorDos"></p>
+                    </article>
+                </section>
+            </section>
+            <section class="seccionBotonesInferiores">
+                <section class="botonesSegundaParteInferior">
+                    <article class="contenedorEntradaTexto">
+                        <input id="pokeName" class="entradaTexto" type="text" placeholder="NOMBRE POKÉMON">
+                    </article>
+                    <section class="botonesBuscador">
+                        <div onclick="BuscarPokemon()" class="boton">Buscar pokémon</div>
+                        <div onclick="BuscarAleatorio()" class="boton">Aleatorio</div>
+                    </section>
+                    <article class="botonRedondo rojo"></article>
+                </section>
+            </section>
+        </article>
+    </section>
+</body>
+<script src="js/pokejs.js"></script>
+</html>
